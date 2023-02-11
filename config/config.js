@@ -22,10 +22,10 @@ module.exports = {
   port: parseInt(required('PORT')),
 
   development: {
-    username: 'lee', //lee
-    password: process.env.MYSQL_AWS_PASSWORD,
-    database: 'sold_out_mall',
-    host: process.env.MYSQL_AWS_HOST,
+    username: 'root',
+    password: process.env.MYSQL_PASSWORD,
+    database: 'ecommerce-A-8',
+    host: process.env.MYSQL_HOST,
     dialect: 'mysql',
   },
   test: {

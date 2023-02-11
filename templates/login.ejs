@@ -53,8 +53,9 @@
           axios.post('/login', formData)
             .then(function (response) {
               console.log(response);
-              window.alert('로그인하셨습니다.');
+              window.alert(response.data.message);
               window.location = '/api';
+
             })
             .catch(function (error) {
               console.log(error.response);
